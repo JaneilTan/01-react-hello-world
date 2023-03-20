@@ -5,9 +5,10 @@ import "./index.css";
 
 // Part B Exercise code below
 const rootElement = document.querySelector("#root");
-const element = document.createElement("h1");
-element.textContent = "Hello World";
-rootElement.appendChild(element);
+// const element = document.createElement("h1");
+// element.textContent = "Hello World";
+// rootElement.appendChild(element);
 // Part C & D Exercise code below
-
+const element = React.createElement("h1", { children: "Hello World" });
+ReactDOM.render(element, rootElement);
 // Part E Exercise code below
