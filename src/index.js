@@ -9,6 +9,9 @@ const rootElement = document.querySelector("#root");
 // element.textContent = "Hello World";
 // rootElement.appendChild(element);
 // Part C & D Exercise code below
-const element = React.createElement("h1", { children: "Hello World" });
+// const element = React.createElement("h1", { children: "Hello World" });
+const element = <h1>Hello World</h1>;
 ReactDOM.render(element, rootElement);
+
 // Part E Exercise code below
+
