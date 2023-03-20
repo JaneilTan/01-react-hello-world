@@ -8,10 +8,21 @@ const rootElement = document.querySelector("#root");
 // const element = document.createElement("h1");
 // element.textContent = "Hello World";
 // rootElement.appendChild(element);
+
 // Part C & D Exercise code below
 // const element = React.createElement("h1", { children: "Hello World" });
-const element = <h1>Hello World</h1>;
-ReactDOM.render(element, rootElement);
+// const element = <h1>Hello World</h1>;
+// ReactDOM.render(element, rootElement);
 
 // Part E Exercise code below
+const Message = () => <h1>Hello World</h1>;
+const element = (
+    <>
+      <Message />
+      <Message />
+      <Message />
+    </>
+  );
+  
+ReactDOM.render(element, rootElement);
 
